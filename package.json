@@ -1,0 +1,16 @@
+{
+  "name": "react-css-pokemon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rm -rf dist && mkdir dist",
+    "build": "babel src --out-dir dist/",
+    "test": "mocha src/utils.spec.js -w --compilers js:babel/register"
+  },
+  "author": "Mikey Murphy <mikeyamadeo@gmail.com> (https://twitter.com/TranscendMikey)",
+  "license": "ISC",
+  "dependencies": {
+    "radium": "0.14.3"
+  }
+}
